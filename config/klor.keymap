@@ -60,8 +60,8 @@ label= "BASE"                                                  ;
  //╷         ╷         ╷         ╷         ╷         ╷         ╷         ╷╷         ╷         ╷         ╷         ╷         ╷         ╷         ╷
               &kp B     &kp L     &kp D     &kp W     &kp Z                          &kp FSLH  &kp F     &kp O     &kp U     &kp J
     &kp COMMA &kp N     &kp R     &kp T     &kp S     &kp G                          &kp Y     &kp H     &kp A     &kp E     &kp I     &kp BSPC
-    &none     &kp Q     &kp X     &kp M     &kp C     &kp V     &kp C_MUTE  &kp K_PP &kp K     &kp P     &kp COLON &kp DOT   &none     &none
-                                  &lt 1 TAB &kp SPACE &kp LCTRL &kp LALT    &kp LGUI &kp LSHFT &lt 2 RET &kp ESC    
+    &none     &kp Q     &kp X     &kp M     &kp C     &kp V     &kp C_MUTE &kp K_PP  &kp K     &kp P     &kp COLON &kp DOT   &none     &none
+                                  &lt 1 TAB &kp SPACE &kp LCTRL &kp LALT   &kp LGUI  &kp LSHFT &lt 2 RET &kp ESC    
                         >;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_AC_FORWARD C_AC_BACK>;
                 };
@@ -71,7 +71,7 @@ label= "BASE"                                                  ;
 
                 number_layer {
 // ┌───────────────────────────────────────────────────────────┐
-label= "NUMBERS"                                                 ;
+label= "NUMBERS"                                               ;
 // └───────────────────────────────────────────────────────────┘
 /*           ┌─────────┬─────────┬─────────┬─────────┬─────────┐                    ┌─────────┬─────────┬─────────┬─────────┬─────────┐
              │         │    <    │    +    │    -    │         │                    │         │    *    │    =    │    >    │         │
@@ -86,8 +86,8 @@ label= "NUMBERS"                                                 ;
  //╷         ╷         ╷         ╷         ╷         ╷         ╷         ╷╷         ╷         ╷         ╷         ╷         ╷         ╷         ╷
               &none     &kp LT    &kp PLUS  &kp MINUS &none                          &none     &kp STAR  &kp EQUAL &kp GT    &none
     &none     &kp N1    &kp N2    &kp N3    &kp N4    &kp N5                         &kp N6    &kp N7    &kp N8    &kp N9    &kp N0
-    &none     &none     &kp SQT   &kp PRCNT &kp EXCL  &none     &kp C_MUTE  &kp K_PP &none     &kp QMARK &kp SEMI  &kp DQT   &none     &none
-                                  &trans    &trans    &trans    &trans      &trans   &trans    &trans    &trans
+    &none     &none     &kp SQT   &kp PRCNT &kp EXCL  &none     &kp C_MUTE &kp K_PP  &none     &kp QMARK &kp SEMI  &kp DQT   &none     &none
+                                  &trans    &trans    &trans    &trans     &trans    &trans    &trans    &trans
                         >;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_NEXT C_PREV>;
                 };
@@ -97,7 +97,7 @@ label= "NUMBERS"                                                 ;
 
                 symbol_layer {
 // ┌───────────────────────────────────────────────────────────┐
-label= "SYMBOLS"                                                 ;
+label= "SYMBOLS"                                               ;
 // └───────────────────────────────────────────────────────────┘
 /*           ┌─────────┬─────────┬─────────┬─────────┬─────────┐                    ┌─────────┬─────────┬─────────┬─────────┬─────────┐
              │         │    )    │    ]    │    }    │         │                    │         │    $    │    #    │    @    │         │
@@ -112,8 +112,8 @@ label= "SYMBOLS"                                                 ;
  //╷         ╷         ╷         ╷         ╷         ╷         ╷         ╷╷         ╷         ╷         ╷         ╷         ╷         ╷         ╷
               &none     &kp RPAR  &kp RBKT  &kp RBRC  &none                          &none     &kp DLLR  &kp HASH  &kp AT    &none     
     &none     &kp UNDER &kp LPAR  &kp LBKT  &kp LBRC  &kp PIPE                       &kp AMPS  &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &none
-    &none     &none     &none     &kp TILDE &kp BLSH  &none    &kp C_MUTE   &kp K_PP &none     &kp CARET &kp GRAVE &none     &none     &mo ADJUST
-                                  &trans    &trans    &trans    &trans      &trans   &trans    &trans    &trans  
+    &none     &none     &none     &kp TILDE &kp BSLH  &none     &kp C_MUTE &kp K_PP  &none     &kp CARET &kp GRAVE &none     &none     &mo ADJUST
+                                  &trans    &trans    &trans    &trans     &trans    &trans    &trans    &trans  
                         >;
                 sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_NEXT C_PREV>;
                 };
@@ -138,8 +138,8 @@ label= "ADJUST"                                                ;
  //╷         ╷         ╷         ╷         ╷         ╷         ╷         ╷╷         ╷         ╷         ╷         ╷         ╷         ╷         ╷
              &bt BT_CLR &trans    &trans    &trans    &trans                         &trans    &trans    &trans    &trans    &bt BT_CLR   
     &trans   &bt BT_NXT &trans    &trans    &trans    &trans                         &trans    &trans    &trans    &trans    &bt BT_NXT   &trans 
-    &trans   &bt BT_PRV &trans    &trans    &trans    &trans    &kp C_MUTE  &kp K_PP &trans    &trans    &trans    &trans    &bt BT_PRV   &trans    
-                                  &trans    &trans    &trans    &trans      &trans   &trans    &trans    &trans    
+    &trans   &bt BT_PRV &trans    &trans    &trans    &trans    &kp C_MUTE &kp K_PP  &trans    &trans    &trans    &trans    &bt BT_PRV   &trans    
+                                  &trans    &trans    &trans    &trans     &trans    &trans    &trans    &trans    
                         >;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_NEXT C_PREV>;
                 };
